@@ -1,0 +1,10 @@
+@import '../../style/_variables';
+
+.navList {
+  display: flex;
+  gap: $gutter-lg;
+
+  li:first-child {
+    margin-left: -$gutter;
+  }
+}

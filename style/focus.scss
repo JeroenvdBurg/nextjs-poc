@@ -1,0 +1,14 @@
+@import '_variables';
+
+/* Hide all default focus states if a mouse is used, this is completely optional ofcourse */
+*:focus {
+  outline: none;
+}
+
+/* Default outline value, which will be applied to all elements receiving focus, this is a required step. */
+/* The .focus class is used by the focus target, more below. */
+.floating-focus-enabled :focus,
+.floating-focus-enabled .focus {
+  outline: $color-purple solid 2px;
+  outline-offset: 8px;
+}

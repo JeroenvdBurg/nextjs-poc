@@ -1,0 +1,14 @@
+@import '../../style/_variables';
+
+.markdown {
+  a {
+    color: $color-purple;
+    border-bottom: 2px solid $color-purple;
+    transition: color $transition-short $ease-out-quint;
+
+    &:hover {
+      color: $color-dark-purple;
+      border-bottom-style: dashed;
+    }
+  }
+}

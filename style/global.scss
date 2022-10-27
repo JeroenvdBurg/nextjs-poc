@@ -1,0 +1,14 @@
+@import '_variables';
+
+@import 'reset';
+@import 'focus';
+
+body,
+p {
+  font-family: $font-inter;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-dark;
+}

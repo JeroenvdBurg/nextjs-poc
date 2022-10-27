@@ -1,0 +1,31 @@
+@import '../../style/_variables';
+
+.contentBlock {
+  display: flex;
+  gap: $gutter;
+
+  &.reversed {
+    flex-direction: row-reverse;
+  }
+
+  &_left {
+    flex: 1;
+  }
+
+  &_right {
+    flex: 1;
+    position: relative;
+    min-height: 400px;
+  }
+
+  @media only screen and (max-width: $tablet-breakpoint) {
+    &,
+    &.reversed {
+      flex-direction: column;
+    }
+
+    &_right {
+      min-height: 300px;
+    }
+  }
+}

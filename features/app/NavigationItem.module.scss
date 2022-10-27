@@ -1,0 +1,20 @@
+@import '../../style/_variables';
+
+.navListItem {
+  color: $color-dark;
+  font-weight: 500;
+  transition: color $transition-short $ease-out-quint;
+
+  a {
+    padding: $gutter-sm $gutter;
+    position: relative;
+
+    &:hover {
+      color: $color-purple;
+    }
+  }
+
+  &.active {
+    color: $color-purple;
+  }
+}

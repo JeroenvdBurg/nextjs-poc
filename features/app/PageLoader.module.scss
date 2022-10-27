@@ -1,0 +1,26 @@
+@import '../../style/_variables';
+
+.pageLoader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1;
+
+  &_bar {
+    height: 100%;
+    width: 100%;
+    background-color: $color-purple;
+    transform: scaleX(0%);
+    transform-origin: left;
+  }
+}
+
+.animating {
+  transition: opacity 0.3s ease-out;
+
+  .pageLoader_bar {
+    transition: transform 0.3s ease-out;
+  }
+}
